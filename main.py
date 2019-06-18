@@ -107,10 +107,9 @@ def main_pygame():
     pygame.init()
     fenetre=pygame.display.set_mode([tex,tey])
     pygame.display.set_caption("TAQUIN")
-    tx,ty=10,10
+    tx,ty=4,4
     font=pygame.font.SysFont("Serif",int((tey/ty)/2))
     taquin=gen_taquin(tx,ty)
-    print(taquin)
     encour=True
     needtoaff=True
     dc=None
@@ -150,7 +149,7 @@ def aff_texte(taquin):
     pass
 
 def main_texte():
-    tx,ty=2,2
+    tx,ty=4,4
     taquin=gen_taquin(tx,ty)
     gagne=False
     while not gagne:
