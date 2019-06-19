@@ -75,7 +75,7 @@ def gen_taquin(tx,ty):
         for y in range(taquin.shape[1]):
             taquin[x,y]=nbs[n]
             n+=1
-    for w in range(random.randint(1,2)):
+    for w in range(random.randint(50,500)):
         taquin=move_taquin(taquin,random.choice(["up","down","left","right"]))
     return taquin
 
